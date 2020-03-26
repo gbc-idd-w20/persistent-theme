@@ -1,0 +1,32 @@
+:root, .light {
+	--bg: #fff;
+	--fg: #222;
+}
+.dark {
+	--bg: #222;
+	--fg: #fff;
+}
+
+body {
+	background-color: var(--bg);
+	color: var(--fg);
+	transition: all 0.3s;
+}
+
+main {
+	height: 100vh;
+	display: grid;
+	place-content: center;
+}
+
+.theme {
+	padding: 0.5em 1em;
+	font-size: 1em;
+}
+
+/* @media (prefers-color-scheme: dark ) {
+	:root {
+		--bg: #222;
+		--fg: #fff;
+	}
+} */
